@@ -75,6 +75,8 @@
 <ul>
   <li>On Android, app data is stored in Android app-private storage and private SharedPreferences. Android cloud backup is disabled for Nine Steeps.</li>
   <li>On Apple platforms, app data is stored locally with Apple's SwiftData framework and related app containers used by the iPhone app, Apple Watch app, and widgets.</li>
+  <li>On Apple platforms, the local preview's first-seen and last-seen dates are stored in Apple Keychain. These dates may survive app deletion and reinstallation on the same device or Apple Account; they contain no tea library, tasting note, account, or payment data.</li>
+  <li>Apple may include app data and photos in device or iCloud backups unless you disable those backups. Nine Steeps does not operate or receive those backups.</li>
 </ul>
 
 <h2>Purchases</h2>
@@ -98,7 +100,7 @@
 <p>Nine Steeps does not include advertising, analytics, attribution, tracking, or crash reporting. Payment processing is handled by Google Play or Apple StoreKit when you choose to make a purchase.</p>
 
 <h2>Deleting Data</h2>
-<p>Deleting the app removes the local data stored by Nine Steeps on that device. Exported copies and marketplace purchase records are controlled by the services where they were created.</p>
+<p>Deleting the app removes its installed app container from that device. Copies can remain in Apple device or iCloud backups, and exported copies remain wherever you saved or shared them. The local preview dates stored in Apple Keychain may survive deletion and reinstallation on the same device or Apple Account. Marketplace purchase history is maintained by Apple or Google. Nine Steeps does not receive or store any of this data on Nine Steeps servers.</p>
 
 <h2>Children</h2>
 <p>Nine Steeps is intended for tea drinkers and is not directed to children under 13.</p>
